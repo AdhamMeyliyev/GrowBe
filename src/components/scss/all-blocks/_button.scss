@@ -1,4 +1,136 @@
-button{
-    display: flex;
-    align-self: start;
+.read-more-btn {
+  border: none;
+  background-color: transparent;
+  color: #f25822;
+  font-size: 15px;
+  line-height: 150%;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:active {
+    opacity: 0.6;
+    transition: all 0.3s ease-in;
+  }
+}
+
+////////////////////////////////////////////////////////
+
+.our-plans {
+  .lists {
+    .lists-item {
+      .item-btn {
+        width: 200px;
+        height: 50px;
+        background-color: #f2592265;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        font-size: 13px;
+        line-height: 250%;
+        font-weight: bold;
+        color: #f3602d;
+        transition: all 0.3s ease-in;
+        margin-top: auto;
+      }
+    }
+  }
+
+
+ /* Media Queries */
+
+ @media (max-width: 62rem) { // 992px
+  .lists {
+    .lists-item {
+      .item-btn {
+        width: 11rem; // 176px
+        height: 2.875rem; // 46px
+        font-size: 0.75rem; // 12px
+        line-height: 2; // 200%
+      }
+    }
+  }
+}
+
+@media (max-width: 48rem) { // 768px
+  .lists {
+    .lists-item {
+      .item-btn {
+        width: 10rem; // 160px
+        height: 2.5rem; // 40px
+        font-size: 0.6875rem; // 11px
+        line-height: 1.75; // 175%
+      }
+    }
+  }
+}
+
+@media (max-width: 30rem) { // 480px
+  .lists {
+    .lists-item {
+      .item-btn {
+        width: 8rem; // 128px
+        height: 2rem; // 32px
+        font-size: 0.625rem; // 10px
+        line-height: 1.5; // 150%
+      }
+    }
+  }
+}
+}
+
+////////////////////////////////////////////////////////
+
+.check-form-btn {
+  width: 140px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #f25822;
+  color: #fff;
+  border: 2px solid #f25822;
+  font-size: 13px;
+  line-height: 150%;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #fff;
+    color: #f25822;
+    transition: all 0.3s ease-in;
+  }
+
+  &:active{
+    opacity: .6;
+    transition: all 0.3s ease-in;
+  }
+}
+
+/* Media Queries */
+
+/* Medium screens (992px and below) */
+@media (max-width: 62rem) { // 992px ni rem ga o'zgartirdim
+  .check-form-btn {
+    width: 120px; // Kichikroq kenglik
+    height: 45px; // Kichikroq balandlik
+    font-size: 0.6875rem; // 11px
+  }
+}
+
+/* Small screens (768px and below) */
+@media (max-width: 48rem) { // 768px ni rem ga o'zgartirdim
+  .check-form-btn {
+    width: 110px; // Kichikroq kenglik
+    height: 40px; // Kichikroq balandlik
+    font-size: 0.625rem; // 10px
+  }
+}
+
+/* Extra small screens (480px and below) */
+@media (max-width: 30rem) { // 480px ni rem ga o'zgartirdim
+  .check-form-btn {
+    width: 100px; // Kichikroq kenglik
+    height: 35px; // Kichikroq balandlik
+    font-size: 0.5625rem; // 9px
+  }
 }

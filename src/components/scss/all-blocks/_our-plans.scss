@@ -1,0 +1,267 @@
+.our-plans {
+  width: 100%;
+  height: auto;
+  background-color: #fafafa;
+  padding: 4rem 2rem; // External padding for spacing
+
+  .heading {
+    font-size: 2.8125rem; // 45px
+    line-height: 1.5;
+    color: #000;
+    text-align: center;
+    margin-top: 2rem; // Spacing from the top
+    margin-bottom: 2rem; // Spacing from the bottom
+  }
+
+  .description {
+    font-size: 1rem; // 16px
+    line-height: 1.5;
+    color: #666;
+    text-align: center;
+    margin-bottom: 3.375rem; // 54px
+    max-width: 600px; // Centering and limiting width
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .lists {
+    display: flex;
+    align-items: stretch; // Ensures items stretch to fill height
+    justify-content: center;
+    gap: 1.875rem; // 30px
+    flex-wrap: wrap; // Allows items to wrap on smaller screens
+
+    .lists-item {
+      width: 23.125rem; // 370px
+      height: 32.125rem; // 514px
+      background-color: #fff;
+      border: 1px solid #ddd; // Light border for distinction
+      border-radius: 0.5rem; // Rounded corners
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px; // Soft shadow for depth
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease-in-out;
+      padding: 2rem;
+
+      &:hover {
+        // height: 35.875rem; // 574px
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 3rem 6.25rem 0px;
+        transition: all 0.3s ease-in;
+
+        .item-btn {
+          background-color: #f25822;
+          color: #fff;
+
+          &:active {
+            opacity: 0.6;
+            transition: all 0.3s ease-in;
+          }
+        }
+      }
+
+      .item-level {
+        font-size: 1.5rem; // 24px
+        line-height: 1.5;
+        color: #000;
+        margin-bottom: 1.5rem; // 24px
+        font-weight: 600; // Bolder font
+      }
+
+      .item-mounth {
+        font-size: 1.5rem; // 24px
+        line-height: 1.5;
+        color: #000;
+        font-weight: 500;
+        position: relative;
+        margin-bottom: 2rem; // 32px
+
+        .number {
+          font-size: 3.75rem; // 60px
+          font-weight: 700; // Bolder font
+        }
+
+        .dollor-sign {
+          font-size: 1.25rem; // 20px
+          font-weight: 700; // Bolder font
+          position: absolute;
+          top: 1rem;
+          left: -1rem; // -16px
+        }
+      }
+
+      .item-desc {
+        font-size: 1.25rem; // 20px
+        line-height: 1.8;
+        color: #666;
+        text-align: center;
+        // margin-bottom: 1.5rem; // 24px
+        max-width: 80%; // Limit width
+      }
+    }
+  }
+}
+
+/* Media Queries */
+
+/* Medium screens (992px and below) */
+@media (max-width: 62rem) {
+  // 992px ni rem ga o'zgartirdim
+  .our-plans {
+    padding: 3rem 1rem; // Responsive padding
+
+    .heading {
+      font-size: 2.1875rem; // 35px
+      padding-top: 3rem; // 48px
+    }
+
+    .description {
+      font-size: 0.875rem; // 14px
+      margin-bottom: 2.5rem; // 40px
+    }
+
+    .lists {
+      gap: 1.25rem; // 20px
+
+      .lists-item {
+        width: 18.125rem; // 290px
+        height: 25.5rem; // 408px
+
+        .item-level {
+          font-size: 1.25rem; // 20px
+          margin-bottom: 1rem; // 16px
+        }
+
+        .item-mounth {
+          font-size: 1.25rem; // 20px
+          margin-bottom: 1.5rem; // 24px
+
+          .number {
+            font-size: 3rem; // 48px
+          }
+
+          .dollor-sign {
+            font-size: 1rem; // 16px
+            top: -0.5rem; // -8px
+            left: -0.5rem; // -8px
+          }
+        }
+
+        .item-desc {
+          font-size: 1rem; // 16px
+          max-width: 100%; // Responsive width
+        }
+      }
+    }
+  }
+}
+
+/* Small screens (768px and below) */
+@media (max-width: 48rem) {
+  // 768px ni rem ga o'zgartirdim
+  .our-plans {
+    padding: 2rem 0.5rem; // Responsive padding
+
+    .heading {
+      font-size: 1.875rem; // 30px
+      padding-top: 2.5rem; // 40px
+    }
+
+    .description {
+      font-size: 0.75rem; // 12px
+      margin-bottom: 2rem; // 32px
+    }
+
+    .lists {
+      gap: 1rem; // 16px
+
+      .lists-item {
+        width: 15rem; // 240px
+        height: 20.5rem; // 328px
+
+        .item-level {
+          font-size: 1rem; // 16px
+          margin-bottom: 1rem; // 16px
+        }
+
+        .item-mounth {
+          font-size: 1rem; // 16px
+          margin-bottom: 1.25rem; // 20px
+
+          .number {
+            font-size: 2.5rem; // 40px
+          }
+
+          .dollor-sign {
+            font-size: 0.875rem; // 14px
+            top: -0.375rem; // -6px
+            left: -0.375rem; // -6px
+          }
+        }
+
+        .item-desc {
+          font-size: 0.875rem; // 14px
+          max-width: 100%; // Responsive width
+        }
+      }
+    }
+  }
+}
+
+/* Extra small screens (480px and below) */
+@media (max-width: 30rem) {
+  // 480px ni rem ga o'zgartirdim
+  .our-plans {
+    padding: 1.5rem 0.25rem; // Responsive padding
+
+    .heading {
+      font-size: 1.5rem; // 24px
+      padding-top: 2rem; // 32px
+    }
+
+    .description {
+      font-size: 0.625rem; // 10px
+      margin-bottom: 1.5rem; // 24px
+    }
+
+    .lists {
+      gap: 0.75rem; // 12px
+
+      .lists-item {
+        width: 12rem; // 192px
+        height: 16rem; // 256px
+
+        .item-level {
+          font-size: 0.875rem; // 14px
+          margin-bottom: 0.875rem; // 14px
+        }
+
+        .item-mounth {
+          font-size: 0.875rem; // 14px
+          margin-bottom: 1rem; // 16px
+
+          .number {
+            font-size: 2rem; // 32px
+          }
+
+          .dollor-sign {
+            font-size: 0.75rem; // 12px
+            top: -0.25rem; // -4px
+            left: -0.25rem; // -4px
+          }
+        }
+
+        .item-desc {
+          font-size: 0.75rem; // 12px
+          width: 12rem; // 192px
+        }
+
+        .item-btn {
+          font-size: 0.875rem; // 14px
+          padding: 0.5rem 1rem; // Reduced padding for smaller screens
+        }
+      }
+    }
+  }
+}
